@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Scroll Status</string>
+    <string name="tab1">PUBLIC</string>
+    <string name="tab2">FRIENDS</string>
+    <string name="tab3">CHAT</string>
+    <string name="tab4">NOTIFICATIONS</string>
+    <string name="action_settings">Settings</string>
+    <string name="signUp">New User? SignUp</string>
+    <string name="action_profile">Profile</string>
+
+    <string name="action_report_user">Report User</string>
+    <string name="action_block_user">Block User</string>
+    <string name="action_unfriend_user">Unfriend</string>
+
+    <string name="Gallery">Gallery</string>
+    <string name="Photo">Photo</string>
+    <string name="string_open_camera">Open Camera</string>
+    <string name="string_next">Next</string>
+    <string name="selected_image">selected_image</string>
+    <string name="srch">Search</string>
+    <string name="string_video">Video</string>
+    <string name="string_pickVideo">Pick From Gallery</string>
+    <string name="string_comments">Comments</string>
+    <string name="edit_phone">Enter phone number</string>
+    <string name="edit_full_name">Enter full name</string>
+    <string name="default_notification_channel_id">Notification</string>
+    <string name="string_noposts">No posts Yet!\nAdd or invite friends to see their posts</string>
+    <string name="my_posts">My Posts</string>
+    <string name="block_list">Block List</string>
+    <string name="change_password">Change Password</string>
+    <string name="stringLogout">Logout</string>
+    <string name="delete_post">Delete Post</string>
+    <string name="string_text">Text</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="toast_cannot_retrieve_selected_video">Cannot retrieve selected video</string>
+    <string name="video_saved_at">Video saves at : $%1s</string>
+    <string name="trimming_progress">Trimming your video...</string>
+    <string name="string_no_req">No new Requests</string>
+    <string name="string_message">When people send you friend requests they\'ll appear here</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_post">PostActivity</string>
+    <string name="clear_chat">Clear chat</string>
+    <string name="privacy">Our Services are provided for private, non-commercial use.   Please take the time to read them carefully. If you are under age 18, you may only use the Services with the consent of your parent or legal guardian. Please be sure your parent or legal guardian has reviewed and discussed these Terms with you.By accessing or using our Services, you confirm that you form a binding contract ( agreement) with scroll status, that you accept these Terms and conditions and that you agree to comply with them. If you do not agree to the Terms and conditions, you must stop accessing or using our Services. If you accept our terms and conditions You agree that you are solely responsible (to us and to others) for the activity that occurs under your account.It is important that you keep your account password confidential and that you do not disclose it to any third party.We reserve the right to disable your user account at any time if you violate any of our terms and conditions.User should not misuse or harm our application and it\'s services in any manner else user account will be cancel.User should not answers, responses, comments, opinions, analysis or recommendations that you are not properly licensed or otherwise qualified to provide.Google does not have any responsibility or liability related to compliance or non-compliance by scroll status or you (or any other user) under our Terms and conditions or the Google Play Terms and conditions.You agree that you will not export or re-export, misuse  directly or indirectly the Services and/or other information or materials provided by scroll status. U agree that you are just user of our service and u will not claim any kind of money to scroll status or any user or any body on the planet for any kind of uses of our services.any dispute between you and scroll status, you will first contact scroll status and make a good faith sustained effort to resolve the dispute by mutual understanding.We do not guarantee that our Services will be secure or free from bugs or viruses. You will be responsible for any loss or damage to you , to us to anybody on using our service from any system. You should use your own virus protection software.You will be responsible for any type of money loss or damage or charges or fees taken by your mobile services or any person or institution from your mobile services.Any dispute and it\'s any charges between you and third party or you and scroll status will be borne by you and third party if any. Scroll status will not borne any expenses or charges in matter. Scroll status is not liable to pay any kind of money to any body on any matter.Scroll status will not be responsible for any type of loss or damage by installation or uninstalling or using or application or it\'s services by any kind.You will provide us with up to date and correct information about you. We may stop or hold any service or services without giving notice to anybody at any situation and any time.This platform is for status purpose and we are not giving any guarantee or warranty that it is true or false, upload by anybody on scroll status and scroll status is not liable for any loss or damage to you or any body for any type of status post.We can delete or repost or hold your post or any body post, delete all or any content post by you or any user or any body or by us with out giving any notice to any one.You can access our application and it\'s services only if you accept our terms and conditions, our privacy policy our copy right policy and user guidelines. You are using our application and it\'s services for entertainment without charging any type of money to any body. Your post will be according our guidelines which is safe for you, for scroll status, for any user and  for any body on this planet. You will install or uninstall our application ot it\'s services without harming anybody. You will post legal contents which is acceptable by good society. You know any loss or damage on using scroll status to you will be borne by you and not by scroll status. You will not ask any money to scroll status or any user of any kind for using application and it\'s services.any dispute regarding any matter related to post or uses scroll status is not liable. You should be 18+ age before using our application and it\'s services or if you are less than 18 years you must understand our terms and conditions of using our application and it\'s services from your parents or guardian and take their permission before using our application and it\'s services. you should not change or harm our application and it\'s services by any way. You should not share any information with any body or any user.  The detail you provide us must be true and correct and up to date and it\'s should not be false or misleading. Your details will be safe with us and we will not share your details any third parties.We can collect information when you create an account such as your contact details, content you create, and your location.  We also collect information contained in the messages you send through our Platform and information from your phone book, if you grant us access to your phone book on your mobile device.We also collect information with your permission such as  age, language,email, phone number, Your username, social media account information, and profile image, comments, photographs, videos, and your post. Payment information, such as bank name, ifsc code, bank branch, other third-party payment information, phone and social network contacts, with your permission. If you choose to find other users through your phone contacts, we will access and collect the names and phone numbers and match that information against existing users of the Platform. If you choose to find other users through your social network contacts, we will collect your public profile information as well as names and profiles of your social contacts. Information to verify an account such as a form of identification, Information you share through surveys or your participation in challenges, or contests.We collect certain information from you when you use the Platform, including your IP address, location-related data, unique device identifiers, browsing history, Cookies, your mobile carrier, time zone setting, and mobile or device information, operating system, app and file names and types, and platform. We collect data to provide you with best services and your data will be safe with us and we will share your data only for advertisement and for any future legal matter.</string>
+    <string name="editProfile">Edit Profile</string>
+
+    <string name="terms">Scroll status is for all 13+ age group, so please be careful while post, comment or don\'t misuse
+        this platform, else your account will be suspend. Scroll status prohibits sexually adult contents,  self harming
+        or harming to any creature of God,  any type of discrimination,  defaming any body,  any illegal contents,
+        any copyright violations,  any misleading and false contents, any disturbing or not appropriate for society contents.
+    </string>
+
+</resources>

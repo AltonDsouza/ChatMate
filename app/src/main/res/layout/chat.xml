@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECE8E8"
+    android:orientation="vertical"
+    tools:context=".Chat">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:padding="4dp"
+    android:weightSum="10"
+    android:orientation="horizontal"
+    android:background="@color/colorPrimary"
+    android:layout_height="50dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="40dp"
+        android:layout_weight="2"
+        android:id="@+id/userimage"
+        android:src="@drawable/defaultcomment"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="Username"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:layout_weight="7"
+        android:id="@+id/friendname"
+        android:textSize="20dp"
+        android:gravity="left"
+        />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:id="@+id/chatOverflow"
+        android:layout_weight="2"
+        android:padding="3dp"
+        android:src="@drawable/ic_dots"
+        />
+
+</LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/container"
+        android:layout_marginTop="55dp"
+        android:padding="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:id="@+id/progress"
+            android:layout_gravity="center"/>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        app:reverseLayout="true"
+        app:stackFromEnd="true"
+        android:id="@+id/recyclerviewid"
+        android:layout_marginBottom="50dp"
+        android:layout_height="match_parent">
+    </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="52dp"
+    android:layout_alignParentBottom="true"
+    android:background="@drawable/messageeditbackground">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="type a message"
+        android:paddingLeft="7dp"
+        android:lines="2"
+        android:background="@null"
+        android:inputType="textMultiLine"
+        android:id="@+id/message"/>
+</LinearLayout>
+
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/backgroundsendbutton"
+            android:layout_alignParentBottom="true"
+            android:paddingRight="8dp"
+            android:paddingLeft="12dp"
+            android:layout_alignParentRight="true"
+            android:scaleType="fitCenter"
+            android:id="@+id/send"
+            app:srcCompat="@drawable/ic_send_black_24dp"/>
+
+</RelativeLayout>
+
+</RelativeLayout>

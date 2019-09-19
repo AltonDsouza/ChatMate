@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:layout_centerInParent="true">
+
+    <EditText
+        android:id="@+id/post_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Write Your Post"
+        android:inputType="textMultiLine"
+        android:textColorHint="@color/colorBlack"
+        android:lines="8"
+        android:maxLines="300"
+        android:textColor="@color/colorPrimary"
+        android:minLines="10"
+        android:scrollbars="vertical"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/submit_text"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/button_border"
+        android:paddingLeft="10dp"
+        android:paddingEnd="10dp"
+        android:shadowColor="@color/colorPrimaryDark"
+        android:text="Submit Post"
+        android:textColor="@color/colorPrimary"
+
+        />
+
+</LinearLayout>

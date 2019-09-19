@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/relLayout1">
+
+        <include layout="@layout/snippet_gallery_toolbar"/>
+
+    </RelativeLayout>
+
+        <!--<GridView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_weight="40"-->
+            <!--android:id="@+id/gridView"-->
+            <!--android:numColumns="3"-->
+            <!--android:horizontalSpacing="1.5dp"-->
+            <!--android:verticalSpacing="1.5dp"-->
+            <!--android:stretchMode="none"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_marginTop="1dp"></GridView>-->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pick"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/relLayout1"
+        android:layout_marginTop="20dp"
+        android:text="Pick from gallery" />
+
+
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_below="@+id/pick"
+            android:id="@+id/image"
+            android:scaleType="fitXY"
+            android:layout_height="wrap_content" />
+
+
+
+
+
+</RelativeLayout>

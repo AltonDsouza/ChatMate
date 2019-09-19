@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:padding="@dimen/_8sdp"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/notiProfileImage"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_toRightOf="@+id/notiProfileImage"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/colorBlack"
+            android:id="@+id/title"/>
+
+        <TextView
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_below="@+id/title"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:visibility="visible"
+            android:layout_toRightOf="@+id/notiProfileImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+            android:id="@+id/message"/>
+    </LinearLayout>
+
+</LinearLayout>

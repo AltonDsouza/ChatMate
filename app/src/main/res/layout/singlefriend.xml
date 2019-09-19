@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/container"
+    android:layout_height="60dp">
+<de.hdodenhof.circleimageview.CircleImageView
+    android:layout_width="60dp"
+    android:layout_height="60dp"
+    android:padding="3dp"
+    android:id="@+id/image"
+    android:src="@drawable/ic_launcher_background"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Rahul Mukeri"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:id="@+id/name"
+        android:textSize="22sp"
+        android:textColor="#000"
+        android:layout_height="match_parent" />
+</LinearLayout>

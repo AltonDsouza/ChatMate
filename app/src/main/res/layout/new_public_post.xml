@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Activity.NewPublicPost">
+
+    <io.supercharge.shimmerlayout.ShimmerLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/shimmer"
+        app:shimmer_animation_duration="1000">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="4dp">
+
+            <include layout="@layout/single_design" />
+            <include layout="@layout/single_design"/>
+
+            <include layout="@layout/single_design" />
+            <include layout="@layout/single_design"/>
+        </LinearLayout>
+    </io.supercharge.shimmerlayout.ShimmerLayout>
+    <!-- TODO: Update blank fragment layout -->
+    <com.allattentionhere.autoplayvideos.AAH_CustomRecyclerView
+        android:id="@+id/rv_home"
+        android:clipToPadding="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <!--<ProgressBar-->
+        <!--android:id="@+id/paginatedLoader"-->
+        <!--style="?android:attr/progressBarStyle"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center|bottom"-->
+        <!--android:background="@android:color/transparent"-->
+        <!--android:visibility="invisible" />-->
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/upload"
+        android:backgroundTint="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="20dp"
+        android:src="@drawable/upload"
+        app:layout_anchorGravity="bottom|right|end" />
+
+</FrameLayout>

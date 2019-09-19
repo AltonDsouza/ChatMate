@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#000"
+    android:id="@+id/container"
+    android:layout_marginBottom="1dp"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/relativePost"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.allattentionhere.autoplayvideos.AAH_VideoImage
+                android:layout_width="match_parent"
+                android:layout_margin="5dp"
+                android:id="@+id/image"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="right|center">
+                <ImageView
+                    android:id="@+id/img_playback"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/ic_pause"
+                    android:visibility="gone" />
+                <ImageView
+                    android:id="@+id/img_vol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/ic_mute"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:textStyle="bold"
+            tools:text="hello" />
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:id="@+id/progress"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"/>
+
+
+        <!--<com.volokh.danylo.video_player_manager.ui.VideoPlayerView-->
+        <!--android:id="@+id/post_video"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:visibility="gone" />-->
+
+        <!--<ImageView-->
+        <!--android:id="@+id/video_cover_1"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:scaleType="centerCrop"-->
+        <!--android:visibility="gone"/>-->
+
+        <TextView
+            android:id="@+id/post_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="#74000000"
+            android:layout_height="50dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="50dp"
+                android:padding="2dp"
+                android:id="@+id/profile_image"
+                android:src="@drawable/ic_launcher_background"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:id="@+id/theOneWhoGoesToProfile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="50dp"
+                android:orientation="vertical"
+                android:layout_marginRight="80dp"
+                android:weightSum="2">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:text="Rahul Mukeri"
+                    android:id="@+id/name"
+                    android:gravity="bottom"
+                    android:textColor="#fff"
+                    android:paddingLeft="4dp"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:text="12:45 pm"
+                    android:id="@+id/time"
+                    android:textColor="#fff"
+                    android:gravity="top"
+                    android:paddingLeft="4dp"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_file_download_black_24dp"
+                    android:id="@+id/download"
+                    android:visibility="gone"
+                    android:padding="3dp"
+                    android:layout_alignParentRight="true"/>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/image_send_friendreq"
+                    android:padding="3dp"
+                    android:src="@drawable/ic_person_add_black_24dp"
+                    android:layout_alignParentRight="true"/>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/image_sent_friendReq"
+                    android:visibility="gone"
+                    android:src="@drawable/correct"
+                    android:padding="3dp"
+                    android:layout_alignParentRight="true"/>
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/overflow"
+                    android:src="@drawable/ic_dots"
+                    android:padding="3dp"
+                    android:layout_alignParentRight="true"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:background="#A6000000"
+            android:layout_alignParentBottom="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:id="@+id/image_heart"
+                    android:src="@drawable/ic_favorite_border_black_24dp"
+                    android:layout_height="match_parent" />
+
+
+                <ImageView
+                    android:id="@+id/share"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_share_black_24dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/comment"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/chat"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_chat_black_24dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/comment"
+                    android:visibility="visible" />
+
+
+                <TextView
+                    android:id="@+id/PID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/share"
+                    android:visibility="invisible" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="40dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="20"
+                        android:id="@+id/likes_count"
+                        android:textColor="#fff"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Likes"
+                        android:textColor="#fff"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/comment_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="#fff"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/caption"
+                        android:layout_height="wrap_content"
+                        android:text="new version of the local environment is here this is the dummy text can you please call me over there"
+                        android:textColor="#fff"/>
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Write comment..."
+                    android:textSize="18dp"
+                    android:layout_marginBottom="4dp"
+                    android:id="@+id/view_all_comments"
+                    android:textColor="#fff"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:visibility="invisible"
+                    android:textSize="18dp"
+                    android:layout_marginBottom="4dp"
+                    android:id="@+id/isShare"
+                    android:textColor="#fff"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/progressBar"
+            android:visibility="gone"/>
+    </RelativeLayout>
+</LinearLayout>

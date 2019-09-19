@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/action_profile"
+        android:icon="@drawable/profile"
+        android:title="My Profile" />
+
+    <item
+        android:id="@+id/action_refer"
+        android:icon="@drawable/album"
+        android:title="Refer and earn" />
+
+    <item
+        android:id="@+id/action_requests"
+        android:icon="@drawable/ic_group_add_black_24dp"
+        android:title="Requests" />
+
+    <item
+        android:id="@+id/action_block"
+        android:icon="@drawable/block"
+        android:title="Blocked Users" />
+
+    <item
+        android:id="@+id/action_privacy"
+        android:icon="@drawable/privacy"
+        android:title="Privacy Policy"/>
+
+
+    <item
+        android:id="@+id/action_logout"
+        android:icon="@drawable/logout"
+        android:title="Logout" />
+
+</menu>

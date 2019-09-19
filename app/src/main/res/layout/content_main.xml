@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabBackground="@color/colorPrimary"
+            app:tabGravity="fill"
+            app:tabMode="fixed"
+            app:tabIndicatorColor="@color/colorAccent"
+            app:tabSelectedTextColor="@color/colorTextPrimary"
+            app:tabTextColor="@color/colorTextDisable">
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tab1"
+                style="@style/tab_item"
+                android:icon="@drawable/ic_public_black_24dp"
+                android:layout_width="wrap_content" />
+
+
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tab3"
+                style="@style/tab_item"
+                android:icon="@drawable/ic_notifications_none_black_24dp" />
+
+            <android.support.design.widget.TabItem
+            android:id="@+id/tab4"
+            style="@style/tab_item"
+            android:icon="@drawable/search" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tab2"
+                style="@style/tab_item"
+                android:icon="@drawable/ic_group_black_24dp" />
+
+            <!--<android.support.design.widget.TabItem-->
+            <!--android:id="@+id/tab5"-->
+            <!--style="@style/tab_item"-->
+            <!--android:icon="@drawable/ic_person_black_24dp" />-->
+
+        </android.support.design.widget.TabLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tablayout"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

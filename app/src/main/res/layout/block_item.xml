@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:weightSum="3"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="@dimen/_65sdp"
+            android:layout_height="@dimen/_65sdp"
+            app:civ_border_width="2dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            app:civ_border_color="#FF000000"
+            android:id="@+id/blocked_profile"/>
+
+        <TextView
+            android:id="@+id/blocked_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alton Dsouza"
+            android:layout_weight="1"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:padding="@dimen/_8sdp" />
+
+        <Button
+            android:id="@+id/unblock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:background="@drawable/rounded_circle"
+            android:text="UnBlock" />
+
+
+
+</LinearLayout>

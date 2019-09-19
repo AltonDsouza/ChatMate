@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "336148404855",
+    "firebase_url": "https://scroll-status.firebaseio.com",
+    "project_id": "scroll-status",
+    "storage_bucket": "scroll-status.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:336148404855:android:af2815a84d004d39",
+        "android_client_info": {
+          "package_name": "com.dynashwet.chatmate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "336148404855-nd47o6uokd864537keeeknjv69psufna.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxGHebrTrlKIZ1ggdRFKl99HfhnmuMtOw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "336148404855-nd47o6uokd864537keeeknjv69psufna.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

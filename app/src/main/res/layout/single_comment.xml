@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:padding="4dp"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="50dp"
+        android:padding="3dp"
+        android:id="@+id/img"
+        android:src="@drawable/flower"
+        android:layout_height="50dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="4dp"
+        android:background="@drawable/commentbackground"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="5dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Rahul"
+            android:id="@+id/username"
+            android:textColor="#000"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/comment"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="new new i am new here plz comment new new i am new here plz comment new new i am new here plz comment new new i am new here plz comment new new i am new here plz comment "/>
+    </LinearLayout>
+</LinearLayout>

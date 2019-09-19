@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.dynashwet.chatmate">
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+
+    <!--Author: Alton Dsouza-->
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:appComponentFactory="whateverString"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/applogo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:name=".Utils.MyApplication"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:appComponentFactory">
+
+
+        <activity android:name=".NavigationDashboard.Privacy"
+            android:label="Privacy" />
+
+        <activity
+            android:name=".PostActivity"
+            android:label="@string/title_activity_post"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+
+        <activity android:name=".PostComment" />
+        <activity android:name=".Chat" />
+        <activity android:name=".Dashboard.CommentsActivity" />
+
+
+        <activity
+            android:name=".Upload.Share"
+            android:theme="@style/AppFullScreenTheme" />
+
+
+        <activity
+            android:name=".Credential.ForgotPassword"
+            android:parentActivityName=".Credential.LoginActivity"
+            android:screenOrientation="portrait" />
+
+
+        <activity android:name=".Dashboard.ContactList" />
+
+
+        <activity
+            android:name=".Upload.GalleryActivity"
+            android:parentActivityName=".Dashboard.TabActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+
+        <activity
+            android:name=".Upload.PhotoActivity"
+            android:parentActivityName=".Dashboard.TabActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+
+        <activity
+            android:name=".NavigationDashboard.ProfileActivity"
+            android:parentActivityName=".Dashboard.TabActivity"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name=".Upload.VideoActivity"
+            android:label="Upload Video"
+            android:parentActivityName=".Dashboard.TabActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+
+        <activity
+            android:name=".Upload.TrimmerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+
+        <activity
+            android:name=".NavigationDashboard.FriendList"
+            android:label="Friend Requests"
+            android:parentActivityName=".Dashboard.TabActivity"
+            android:screenOrientation="portrait" /> <!-- <activity android:name=".NavigationDashboard.BlockedList" -->
+        <!-- android:parentActivityName=".Dashboard.TabActivity" -->
+        <!-- android:screenOrientation="portrait"/> -->
+        <activity android:name=".Upload.NextActivity" />
+
+        <activity android:name=".NavigationDashboard.Refer"
+            android:screenOrientation="portrait"
+            android:label="Refer and earn"
+            android:parentActivityName=".Dashboard.TabActivity"/>
+
+        <activity
+            android:name=".Dashboard.ReportUser"
+            android:theme="@style/Theme.AppCompat.Dialog" />
+        <activity android:name=".Credential.EnterOtp" />
+        <activity android:name=".Credential.EnterProfile" />
+
+
+        <activity
+            android:name=".Dashboard.EditProfile"
+            android:theme="@style/AppFullScreenTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".Credential.EnterPassword" />
+
+
+        <activity
+            android:name=".Dashboard.EnlargedView"
+            android:theme="@style/Theme.AppCompat.Dialog" />
+
+        <activity android:name=".Credential.LoginActivity" />
+
+        <activity android:name=".Credential.SignUpActivity" />
+        <activity
+            android:name=".Dashboard.PostText"
+            android:theme="@style/Theme.AppCompat.Dialog" />
+        <activity
+            android:name=".Dashboard.Setting"
+            android:parentActivityName=".Dashboard.TabActivity" />
+
+        <activity
+            android:name=".Settings.MyPosts"
+            android:parentActivityName=".Dashboard.Setting" />
+
+
+        <activity
+            android:name=".NavigationDashboard.BlockedList"
+            android:parentActivityName=".Dashboard.Setting"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name=".Dashboard.TabActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity android:name=".Fragments.Home"></activity>
+
+
+        <activity android:name=".Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+
+        <service android:name=".Utils.FirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>
